@@ -1,0 +1,50 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Hello Ionic</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ul class="scrollabletabs tab-demo z-depth-1">
+        <li class="scrollabletab" (click)="turn(1)"><a class="active" href="javascript:void(0)">Test 1</a></li>
+        <li class="scrollabletab" (click)="turn(2)"><a href="javascript:void(0)">Test 2</a></li>
+        <li class="scrollabletab" (click)="turn(3)"><a href="javascript:void(0)">Test 3</a></li>
+        <li class="scrollabletab" (click)="turn(4)"><a href="javascript:void(0)">Test 4</a></li>
+        <li class="scrollabletab" (click)="turn(5)"><a href="javascript:void(0)">Test 5</a></li>
+        <li class="scrollabletab" (click)="turn(6)"><a href="javascript:void(0)">Test 6</a></li>
+        <li class="scrollabletab" (click)="turn(7)"><a href="javascript:void(0)">Test asdfasdf</a></li>
+        <li class="scrollabletab" (click)="turn(8)"><a href="javascript:void(0)">Test 8</a></li>
+        <li class="scrollabletab" (click)="turn(9)"><a href="javascript:void(0)">Test 9</a></li>
+    </ul>
+    <ion-slides #mySlides (ionSlideDidChange)="slideChanged()">
+        <ion-slide>
+            <h1>Slide 1</h1>
+        </ion-slide>
+        <ion-slide>
+            <h1>Slide 2</h1>
+        </ion-slide>
+        <ion-slide>
+            <h1>Slide 3</h1>
+        </ion-slide>
+        <ion-slide>
+            <h1>Slide 4</h1>
+        </ion-slide>
+        <ion-slide>
+            <h1>Slide 5</h1>
+        </ion-slide>
+        <ion-slide>
+            <h1>Slide 6</h1>
+        </ion-slide>
+        <ion-slide>
+            <h1>Slide 7</h1>
+        </ion-slide>
+        <ion-slide>
+            <h1>Slide 8</h1>
+        </ion-slide>
+        <ion-slide>
+            <h1>Slide 9</h1>
+        </ion-slide>
+    </ion-slides>
+</ion-content>
